@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo's Portfolio</title>
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header-component></header-component>
+        <section id="portfolio" class="p-6">
+            <h1 class="text-4xl font-bold mb-4">Portfolio</h1>
+            <div class="grid grid-cols-3 gap-4">
+                <card-component v-for="project in portfolio" :key="project.id" :project="project"></card-component>
+            </div>
+        </section>
+        <footer-component></footer-component>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

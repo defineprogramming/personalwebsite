@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Leo</title>
+    <link href="../css/tailwind.css" rel="stylesheet">
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header-component></header-component>
+        <section id="about" class="p-6">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold mb-4">About Me</h1>
+                <div class="flex flex-wrap -mx-6">
+                    <div class="w-full md:w-1/2 px-6">
+                        <img :src="profileImage" alt="Leo's Profile" class="rounded-lg shadow-md mb-4">
+                    </div>
+                    <div class="w-full md:w-1/2 px-6">
+                        <p class="text-lg mb-4">{{ about }}</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer-component></footer-component>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
